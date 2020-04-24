@@ -1,5 +1,8 @@
 module Main exposing (main)
 import Html
 
+greeting : String
+greeting = "Hello, Static Elm!!!"
+
 main = 
-  Html.text "Hello World!"
+  Html.text greeting
