@@ -1,6 +1,7 @@
 module Main exposing (..)
 
 import Html exposing (..)
+import Html.Attributes exposing (..)
 
 bottlesOf : String -> Int -> String
 bottlesOf content amount =
@@ -13,7 +14,9 @@ sayHello name =
 main = 
   div []
     [
-        div [] [
+        div [style "color" "#CCCCCC"
+        , style "font-size" "3em"
+        , style "padding" "10px"] [
             text(sayHello "Functional Elm")
         ]
         , div [] [
