@@ -135,10 +135,18 @@ ul {
 .detailed-photo .like-button {
   cursor: pointer;
   margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+  background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
 }
 
 .detailed-photo .like-button i.fa-heart {
+  background-position: -2800px 0;
   color: #d00;
+}
+
+.detailed-photo .like-button i.fa-heart-o {
+  background-position: 0 0;
 }
 
 .detailed-photo .caption {

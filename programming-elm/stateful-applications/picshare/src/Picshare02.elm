@@ -11,10 +11,10 @@ initialModel : {url: String, caption: String, liked: Bool}
 initialModel = 
   { url = baseUrl ++ "1.jpg"
   , caption = "Surfing"
-  , liked = False
+  , liked = True
   }
 
-viewDetailedPhoto : {url : String, caption : String, liked : Bool} -> Html Msg
+viewDetailedPhoto : {url: String, caption: String, liked: Bool} -> Html Msg
 viewDetailedPhoto model =
   let
     buttonClass =
@@ -40,7 +40,7 @@ viewDetailedPhoto model =
               ]
         ]
 
-view : {url : String, caption : String, liked : Bool} -> Html Msg
+view : {url: String, caption: String, liked: Bool} -> Html Msg
 view model =
   div []
       [ div [class "header"]
